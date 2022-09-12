@@ -9,14 +9,14 @@ While (True) {
 }
 
 UserIdle() {
-    If (A_Timeidle > 5000) {
+    If (A_Timeidle > 50000) {
         StartTimer()
     }
 }
 
 StartTimer() {
     start_time := A_TickCount
-    time_to_run := 50000
+    time_to_run := 5000
     end_time := start_time + time_to_run
     MoveTheMouse(end_time)
 }
