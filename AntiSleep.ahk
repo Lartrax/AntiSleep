@@ -10,7 +10,7 @@ UserIdle() {
     If (A_Timeidle > 50000) {
         StartTimer()
     } Else {
-        Sleep, 50000
+        Sleep, 11000
         UserIdle()
     }
 }
