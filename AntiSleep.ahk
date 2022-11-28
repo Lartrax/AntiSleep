@@ -5,12 +5,12 @@ SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
 While, true {
-    Sleep, 11000
+    Sleep, 10000
     UserIdle()
 }
 
 UserIdle() {
-    If (A_Timeidle > 50000) {
+    If (A_Timeidle > 40000) {
         StartTimer()
     }
 }
